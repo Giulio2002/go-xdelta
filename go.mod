@@ -1,4 +1,4 @@
-module github.com/nine-lives-later/go-xdelta
+module github.com/rorschach01/go-xdelta
 
 require (
 	github.com/dustin/go-humanize v1.0.0
