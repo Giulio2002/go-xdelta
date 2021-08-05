@@ -3,7 +3,7 @@ package xdelta
 import (
 	"fmt"
 	"github.com/dustin/go-humanize"
-	lib "github.com/nine-lives-later/go-xdelta/xdelta-lib"
+	lib "github.com/rorschach01/go-xdelta/xdelta-lib"
 	"sync"
 	"time"
 )

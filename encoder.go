@@ -9,7 +9,6 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/nine-lives-later/go-xdelta/xdelta-lib"
 )
 
 type Encoder struct {

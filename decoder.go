@@ -8,7 +8,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/nine-lives-later/go-xdelta/xdelta-lib"
+	"github.com/rorschach01/go-xdelta/xdelta-lib"
 )
 
 type Decoder struct {
