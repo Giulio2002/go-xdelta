@@ -3,6 +3,7 @@ package xdelta
 import (
 	"context"
 	"fmt"
+	lib "github.com/rorschach01/go-xdelta/xdelta-lib"
 	"io"
 	"runtime"
 	"time"
@@ -47,7 +48,7 @@ func NewEncoder(options EncoderOptions) (*Encoder, error) {
 
 	// initialize
 	if options.BlockSizeKB <= 0 {
-		options.BlockSizeKB = (8 * 1024) // 8 MB
+		options.BlockSizeKB = (1) // 1 KB
 	}
 
 	err = lib.EncoderInit(handle, options.BlockSizeKB, options.FileID, options.FromFile != nil)
@@ -191,7 +192,7 @@ func (enc *Encoder) Process(ctx context.Context) error {
 			}
 
 			n, err := enc.sourceFile.Read(enc.sourceBuffer)
-			if err != nil && err != io.EOF {
+			if err != nil {
 				return fmt.Errorf("Failed to read from FROM/source file: %v", err)
 			}
 			if enc.stats != nil {
