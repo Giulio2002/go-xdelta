@@ -3,12 +3,11 @@ package xdelta
 import (
 	"context"
 	"fmt"
-	lib "github.com/nine-lives-later/go-xdelta/xdelta-lib"
+	lib "github.com/Giulio2002/go-xdelta/xdelta-lib"
 	"io"
 	"runtime"
 	"time"
 	"unsafe"
-
 )
 
 type Encoder struct {

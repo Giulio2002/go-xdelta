@@ -2,10 +2,11 @@ package xdelta
 
 import (
 	"fmt"
-	"github.com/dustin/go-humanize"
-	lib "github.com/nine-lives-later/go-xdelta/xdelta-lib"
 	"sync"
 	"time"
+
+	lib "github.com/Giulio2002/go-xdelta/xdelta-lib"
+	"github.com/dustin/go-humanize"
 )
 
 type Stats struct {
